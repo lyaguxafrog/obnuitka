@@ -1,0 +1,22 @@
+[project]
+name = "obnuitka"
+version = "0.1.0a0"
+description = ""
+readme = "README.md"
+authors = [
+    { name = "Adrian Makridenko", email = "adrianmakridenko@duck.com" }
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+obnuitka = "obnuitka:main"
+
+[build-system]
+requires = ["uv_build>=0.10.9,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "nuitka[all]>=4.0.7",
+]
